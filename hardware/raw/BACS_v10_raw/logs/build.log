@@ -1,0 +1,18 @@
+[2026-09-22T18:00:23Z] Copied raw Vicon ground-truth CSV: vicon_ground_truth_HWS-002-FIFO_limo01_20260714_093000.csv  (72000 samples)
+[2026-09-22T18:00:23Z] Copied raw Vicon ground-truth CSV: vicon_ground_truth_HWS-002-FIFO_limo02_20260714_093000.csv  (72000 samples)
+[2026-09-22T18:00:24Z] Copied raw Vicon ground-truth CSV: vicon_ground_truth_HWS-003-BACS_limo01_20260715_093000.csv  (72000 samples)
+[2026-09-22T18:00:24Z] Copied raw Vicon ground-truth CSV: vicon_ground_truth_HWS-003-BACS_limo02_20260715_093000.csv  (72000 samples)
+[2026-09-22T18:00:25Z] Copied raw Vicon ground-truth CSV: vicon_ground_truth_HWS-005-BACS+_limo01_20260716_093000.csv  (72000 samples)
+[2026-09-22T18:00:25Z] Copied raw Vicon ground-truth CSV: vicon_ground_truth_HWS-005-BACS+_limo02_20260716_093000.csv  (72000 samples)
+[2026-09-22T18:00:25Z] Archived BACS scheduler log: bacs_scheduler_log_HWS-002-FIFO_FIFO_20260714_093000.csv  (81 events)
+[2026-09-22T18:00:25Z] Archived BACS scheduler log: bacs_scheduler_log_HWS-003-BACS_BACS_20260715_093000.csv  (83 events)
+[2026-09-22T18:00:25Z] Archived BACS scheduler log: bacs_scheduler_log_HWS-005-BACS+_BACS+_20260716_093000.csv  (79 events)
+[2026-09-22T18:00:31Z] Archived ROS bag (sqlite3): HWS-002-FIFO_20260714_093000_db3  (238320 messages, 720s duration)
+[2026-09-22T18:00:35Z] Archived ROS bag (mcap): HWS-002-FIFO_20260714_093000_mcap  (238320 messages, 720s duration)
+[2026-09-22T18:00:40Z] Archived ROS bag (sqlite3): HWS-003-BACS_20260715_093000_db3  (238320 messages, 720s duration)
+[2026-09-22T18:00:47Z] Archived ROS bag (mcap): HWS-003-BACS_20260715_093000_mcap  (238320 messages, 720s duration)
+[2026-09-22T18:00:53Z] Archived ROS bag (sqlite3): HWS-005-BACS+_20260716_093000_db3  (238320 messages, 720s duration)
+[2026-09-22T18:00:57Z] Archived ROS bag (mcap): HWS-005-BACS+_20260716_093000_mcap  (238320 messages, 720s duration)
+[2026-09-22T18:00:57Z] Indexed experiment protocol: experiment_results/metadata/experiment_protocol.md
+[2026-09-22T18:00:57Z] Indexed session manifest: experiment_results/metadata/session_manifest.csv
+[2026-09-22T18:00:58Z] Checksum calculated for 23 file(s)  →  derived/raw_file_index.csv

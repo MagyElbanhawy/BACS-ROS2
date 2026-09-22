@@ -1,0 +1,21 @@
+# RYLR998 reference parameters derived from the module datasheet and local hardware record.
+# The raw archive evidence supports the deployed configuration as RYLR998 at 433 MHz.
+
+module: RYLR998
+vendor: REYAX
+interface:
+  uart_baud_rate: 115200
+  uart_bits: 8
+  uart_parity: none
+  uart_stop_bits: 1
+  flow_control: none
+power:
+  supply_voltage_v: 3.3
+  max_logic_voltage_v: 3.3
+radio:
+  frequency_mhz: 433
+  region_note: "Raw evidence records 433 MHz; do not infer 868 MHz without independent hardware config evidence."
+  module_family: LoRa
+notes:
+  - "The raw hardware archive for this repository records the radio as RYLR998 and the metadata states 433 MHz."
+  - "The manuscript's 868 MHz statement is not supported by the raw evidence and should be treated as a documentation error unless a separate original hardware config log proves otherwise."
