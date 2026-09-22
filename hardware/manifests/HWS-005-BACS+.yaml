@@ -1,0 +1,34 @@
+session_id: HWS-005-BACS+
+policy: BACS+
+acquisition_month: "2026-07"
+acquisition_precision: month
+exact_time_available: false
+robots:
+  - LIMO-01
+  - LIMO-02
+ground_truth: Vicon
+radio_module: RYLR998
+radio_frequency: "433 MHz"
+ros_distribution: ROS 2 Humble
+duration: 720
+raw_files:
+  - path: BACS_v10_raw/experiment_results/rosbags/HWS-005-BACS+_20260716_093000_db3/HWS-005-BACS+_20260716_093000_db3.db3
+    sha256: 46469f609d52717954428d8caf1ad6f698c8f7dd6c7d0f627013591277319c06
+  - path: BACS_v10_raw/experiment_results/rosbags/HWS-005-BACS+_20260716_093000_db3/metadata.yaml
+    sha256: 9cdb8418d6ccf74a5a74c63d1fa4464aae22b909ea67b92d10637659b81fbd40
+  - path: BACS_v10_raw/experiment_results/rosbags/HWS-005-BACS+_20260716_093000_mcap/HWS-005-BACS+_20260716_093000_mcap.mcap
+    sha256: cb548d263efe3f341427d8c0d6d03e809a4144526a9b312b43094df7e4d348a6
+  - path: BACS_v10_raw/experiment_results/rosbags/HWS-005-BACS+_20260716_093000_mcap/metadata.yaml
+    sha256: e00a382b991ccf8b9eb1fcb9910d7d5b4e13135ce841098be1ba43a0036f6834
+  - path: BACS_v10_raw/experiment_results/vicon_logs/vicon_ground_truth_HWS-005-BACS+_limo01_20260716_093000.csv
+    sha256: 620a7a6b9db976f1a7fe5b139e8c818118f4d99c10368fb1e7c89522d560920d
+  - path: BACS_v10_raw/experiment_results/vicon_logs/vicon_ground_truth_HWS-005-BACS+_limo02_20260716_093000.csv
+    sha256: 1279ee2b57aecaaf892796ffba07b324336a7ae7f210aba260349e5163affa35
+  - path: BACS_v10_raw/experiment_results/bacs_logs/bacs_scheduler_log_HWS-005-BACS+_BACS+_20260716_093000.csv
+    sha256: e1351155010c8cc2c90fee88bee938e5ad63bdfa8fced36f63486e0d4e85720e
+recorded_ros_timestamp:
+  start: 1784194200000854748
+  end: 1784194919991990880
+processing_history:
+  - "2026-07-22: derivation of provenance and acquisition status"
+  - "2026-09-22T18:00:22Z: archive creation"
