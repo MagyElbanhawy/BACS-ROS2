@@ -46,7 +46,7 @@ These values must be distinguished from ROS-recorded timestamps and file timesta
 
 4. The manuscript mentions `10 matched runs per policy`.
    - The archive metadata declares `n_runs = 10` in `session_manifest.csv` and the derived provenance files.
-   - The audit does not independently reconstruct and match ten runs across all policy-level raw streams, so the claim is not marked as verified from raw data.
+   - Each policy scheduler log independently contains run labels `1` through `10`, so the ten-run count is supported by both metadata and raw scheduler records. This does not imply that the missing Table 6 RMSE values can be reconstructed.
 
 5. The manuscript claims `session duration` and lines about 720 s / 12 minutes are consistent with the raw data and the ROS bag metadata.
 
@@ -69,7 +69,7 @@ These values must be distinguished from ROS-recorded timestamps and file timesta
 | FIFO / BACS / BACS+ | VERIFIED_FROM_RAW_DATA | Session IDs and scheduler CSV files are labeled accordingly. |
 | 1% duty-cycle condition | MISSING_EVIDENCE | No explicit file records or raw metadata field for this exact regulatory condition. |
 | `W = 60 s` scheduling window | MISSING_EVIDENCE | No explicit raw evidence for the scheduler window parameter. |
-| 10 matched runs per policy | DOCUMENTED_ONLY / MISSING_EVIDENCE | `session_manifest.csv` and derived provenance files declare `n_runs = 10`, but the archive does not independently establish one-to-one matching of ten runs across all policy-level raw streams. |
+| 10 matched runs per policy | VERIFIED_FROM_RAW_DATA | `session_manifest.csv` and derived provenance files declare `n_runs = 10`; each FIFO, BACS, and BACS+ scheduler log contains run labels `1` through `10`. |
 | Session duration of 720 s | VERIFIED_FROM_RAW_DATA | ROS bag metadata records `duration.nanoseconds` consistent with 720 s. |
 | raw ROS DB3/MCAP contents | VERIFIED_FROM_RAW_DATA | All three sessions have DB3 and MCAP bags with consistent topic schemas and counts. |
 | Vicon CSV schema | VERIFIED_FROM_RAW_DATA | Header is `timestamp_ns,x,y,z,roll_rad,pitch_rad,yaw_rad,vx,vy,vz`. |
@@ -98,4 +98,4 @@ These values must be distinguished from ROS-recorded timestamps and file timesta
 - MISSING_EVIDENCE: no independent evidence was found.
 
 ## Conclusion
-The raw archive supports the core physical-validation claim that sessions were recorded in July 2026 with ROS 2 Humble, Vicon ground truth, RYLR998 radios, FIFO/BACS/BACS+ policies, and session-level timing metadata. It does not independently verify the manuscript's assertion of `10 matched runs per policy`, and it does not support the assertions about `868 MHz`, the exact 1% duty-cycle condition, the explicit 60 s scheduling window, or the detailed RMSE metrics without additional processing tables. The manuscript and raw archive therefore agree on some core facts but disagree on at least one concrete hardware parameter: radio frequency.
+The raw archive supports the core physical-validation claim that sessions were recorded in July 2026 with ROS 2 Humble, Vicon ground truth, RYLR998 radios, FIFO/BACS/BACS+ policies, ten labeled runs per policy, and session-level timing metadata. It does not support the assertions about `868 MHz`, the exact 1% duty-cycle condition, the explicit 60 s scheduling window, or the detailed Table 6 RMSE metrics without additional processing tables or estimator outputs. The manuscript and raw archive therefore agree on the ten-run count but disagree on at least one concrete hardware parameter: radio frequency.

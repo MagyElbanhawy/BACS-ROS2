@@ -1,0 +1,102 @@
+{
+  "status": "incomplete_from_archive",
+  "rmse_status": "unavailable_without_per_run_map_alignment_metrics",
+  "paper_targets": {
+    "FIFO": {
+      "mean_m": 0.48,
+      "std_m": 0.15
+    },
+    "BACS": {
+      "mean_m": 0.28,
+      "std_m": 0.08
+    },
+    "BACS+": {
+      "mean_m": 0.27,
+      "std_m": 0.09
+    }
+  },
+  "paper_diagnostic_targets": {
+    "median_scheduling_deferral_s": 154.0,
+    "median_channel_delay_s": 0.17,
+    "deferral_to_channel_ratio": 906.0
+  },
+  "diagnostic_target_status": "not_reproduced: the current scheduler logs contain timing fields, but their observed scales do not independently recover the paper targets",
+  "diagnostics": [
+    {
+      "policy": "FIFO",
+      "source": "hardware\\raw\\BACS_v10_raw\\experiment_results\\bacs_logs\\bacs_scheduler_log_HWS-002-FIFO_FIFO_20260714_093000.csv",
+      "events": 81,
+      "run_labels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "run_label_count": 10,
+      "deferral_mean_s": 0.0025430805061728394,
+      "deferral_median_s": 0.002533803,
+      "channel_delay_mean_s": 1.3835234567901234e-05,
+      "channel_delay_median_s": 1.3856e-05,
+      "rssi_mean_dbm": -84.4316049382716,
+      "snr_mean_db": 10.138271604938272
+    },
+    {
+      "policy": "BACS",
+      "source": "hardware\\raw\\BACS_v10_raw\\experiment_results\\bacs_logs\\bacs_scheduler_log_HWS-003-BACS_BACS_20260715_093000.csv",
+      "events": 83,
+      "run_labels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "run_label_count": 10,
+      "deferral_mean_s": 0.0024688667469879516,
+      "deferral_median_s": 0.002418461,
+      "channel_delay_mean_s": 1.4905457831325301e-05,
+      "channel_delay_median_s": 1.5008e-05,
+      "rssi_mean_dbm": -82.5822891566265,
+      "snr_mean_db": 11.024698795180722
+    },
+    {
+      "policy": "BACS+",
+      "source": "hardware\\raw\\BACS_v10_raw\\experiment_results\\bacs_logs\\bacs_scheduler_log_HWS-005-BACS+_BACS+_20260716_093000.csv",
+      "events": 79,
+      "run_labels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "run_label_count": 10,
+      "deferral_mean_s": 0.002247592506329114,
+      "deferral_median_s": 0.002053132,
+      "channel_delay_mean_s": 1.5135405063291138e-05,
+      "channel_delay_median_s": 1.5698e-05,
+      "rssi_mean_dbm": -81.5220253164557,
+      "snr_mean_db": 9.62632911392405
+    }
+  ],
+  "required_missing_inputs": [
+    "per-run map-alignment RMSE values or map-estimate streams",
+    "a documented mapping from raw bag topics to the Table 6 estimator"
+  ]
+}
