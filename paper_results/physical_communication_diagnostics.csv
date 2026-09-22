@@ -1,0 +1,4 @@
+policy,source,events,run_labels,run_label_count,deferral_mean_s,deferral_median_s,channel_delay_mean_s,channel_delay_median_s,rssi_mean_dbm,snr_mean_db
+FIFO,hardware\raw\BACS_v10_raw\experiment_results\bacs_logs\bacs_scheduler_log_HWS-002-FIFO_FIFO_20260714_093000.csv,81,"[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]",10,0.0025430805061728394,0.002533803,1.3835234567901234e-05,1.3856e-05,-84.4316049382716,10.138271604938272
+BACS,hardware\raw\BACS_v10_raw\experiment_results\bacs_logs\bacs_scheduler_log_HWS-003-BACS_BACS_20260715_093000.csv,83,"[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]",10,0.0024688667469879516,0.002418461,1.4905457831325301e-05,1.5008e-05,-82.5822891566265,11.024698795180722
+BACS+,hardware\raw\BACS_v10_raw\experiment_results\bacs_logs\bacs_scheduler_log_HWS-005-BACS+_BACS+_20260716_093000.csv,79,"[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]",10,0.002247592506329114,0.002053132,1.5135405063291138e-05,1.5698e-05,-81.5220253164557,9.62632911392405
